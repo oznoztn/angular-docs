@@ -16,3 +16,7 @@ ul.heroes
 ul.heroes li:hover{
     background-color:wheat;
 }
+
+.selected {
+    background-color:wheat;
+}
