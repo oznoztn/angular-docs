@@ -1,0 +1,21 @@
+ul.character-list li {
+  list-style: none;
+  background-image: none;
+  background-repeat: none;
+  background-position: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+ul.character-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.character-list li:hover {
+  background-color: wheat;
+}
+
+.selected {
+  background-color: wheat;
+}
