@@ -1,14 +1,15 @@
 import { Character } from "./character";
 
 export const CHARACTERS: Character[] = [
-  { id: 11, name: "Dr Nice" },
-  { id: 12, name: "Narco" },
-  { id: 13, name: "Bombasto" },
-  { id: 14, name: "Celeritas" },
-  { id: 15, name: "Magneta" },
-  { id: 16, name: "RubberMan" },
-  { id: 17, name: "Dynama" },
-  { id: 18, name: "Dr IQ" },
-  { id: 19, name: "Magma" },
-  { id: 20, name: "Tornado" }
+  { id: 1, name: "Ken" },
+  { id: 2, name: "Ryu" },
+  { id: 3, name: "Guile" },
+  { id: 4, name: "Akuma" },
+  { id: 5, name: "Cody" },
+  { id: 6, name: "Guy" },
+  { id: 7, name: "Honda" },
+  { id: 8, name: "Dhalsim" },
+  { id: 9, name: "Sagat" },
+  { id: 10, name: "M. Bison" },
+  { id: 11, name: "Cammy" }
 ];
