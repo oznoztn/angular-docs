@@ -11,6 +11,8 @@ export class HeroesComponent implements OnInit {
     id: 1,
     name: 'Ken'
   };  
+
+  deneme = "asdf";
   
   constructor() { }
 
