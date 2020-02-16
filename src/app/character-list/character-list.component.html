@@ -15,14 +15,7 @@
 
 <!-- The component should only display the selected hero details if the selectedCharacter exists. -->
 <div *ngIf="selectedCharacter" class="col-sm-6">
-  <h2>{{ selectedCharacter.name | uppercase }} Details</h2>
-  <div>
-    <span>id:</span>
-    {{ selectedCharacter.id }}
-  </div>
-  <div>
-    <span>name:</span>
-    {{ selectedCharacter.name }}
-  </div>
-  <hr />
+  <app-character-details
+    [character]="selectedCharacter"
+  ></app-character-details>
 </div>
