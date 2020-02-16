@@ -15,7 +15,7 @@ export class CharacterListComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onSelect(character) {
+  onCharacterSelect(character) {
     this.selectedCharacter = character;
   }
 }

@@ -4,9 +4,11 @@
     <li
       [class.selected]="character === selectedCharacter"
       *ngFor="let character of characters"
-      (click)="onSelect(character)"
     >
-      <app-character [char]="character"></app-character>
+      <app-character
+        [char]="character"
+        (click)="onCharacterSelect(character)"
+      ></app-character>
     </li>
   </ul>
 </div>
