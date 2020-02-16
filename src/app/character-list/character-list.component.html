@@ -6,7 +6,7 @@
       *ngFor="let character of characters"
       (click)="onSelect(character)"
     >
-      <span class="badge">{{ character.id }}</span> {{ character.name }}
+      <app-character [char]="character"></app-character>
     </li>
   </ul>
 </div>
