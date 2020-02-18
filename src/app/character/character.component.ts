@@ -13,7 +13,9 @@ export class CharacterComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   onClick() {
     this.handleProductClick.emit();

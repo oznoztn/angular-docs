@@ -1,3 +1,7 @@
-<div (click)="onClick()">
-  <span class="badge">{{ char.id }}</span> {{ char.name }}
-</div>
+<!-- <div (click)="onClick()">
+  <span class="badge">{{ char.id }}</span> 
+</div> -->
+
+<span>
+  <a [routerLink]="['/details', char.id]">{{ char.name }}</a>
+</span>
