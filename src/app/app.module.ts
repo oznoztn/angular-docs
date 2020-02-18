@@ -6,10 +6,11 @@ import { AppComponent } from "./app.component";
 import { CharacterListComponent } from "./character-list/character-list.component";
 import { CharacterComponent } from './character/character.component';
 import { CharacterDetailsComponent } from './character-details/character-details.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, CharacterListComponent, CharacterComponent, CharacterDetailsComponent],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
