@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Character } from "../character";
-import { CHARACTERS } from "../mock-characters";
+import { CharacterService } from '../character.service';
 
 @Component({
   selector: "app-character-list",
@@ -8,10 +8,15 @@ import { CHARACTERS } from "../mock-characters";
   styleUrls: ["./character-list.component.css"]
 })
 export class CharacterListComponent implements OnInit {
-  characters = CHARACTERS;
+  characters: Character[];
   selectedCharacter: Character;
 
-  constructor() {}
+  constructor(
+    // Dependency injection is in action here
+    private characterService: CharacterService
+  ) {
+    this.characters = this.characterService.getCharacters();
+  }
 
   ngOnInit(): void {}
 
