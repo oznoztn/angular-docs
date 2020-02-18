@@ -31,6 +31,6 @@ export class CharacterListComponent implements OnInit {
 // Instead, call getHeroes() inside the ngOnInit lifecycle hook 
 //   and let Angular call ngOnInit() at an appropriate time after constructing a HeroesComponent instance.
   getCharacters(): void {
-    this.characters = this.characterService.getCharacters();
+    this.characterService.getCharacters().subscribe(chars => this.characters = chars);
   }
 }
