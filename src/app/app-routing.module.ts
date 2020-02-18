@@ -4,7 +4,7 @@ import { CharacterListComponent } from './character-list/character-list.componen
 import { MainScreenComponent } from './main-screen/main-screen.component';
 
 const routes: Routes = [
-  { path: '', component: MainScreenComponent },
+  { path: '', component: MainScreenComponent, pathMatch: 'full' },
   { path: 'characters', component: CharacterListComponent }
 ];
 
