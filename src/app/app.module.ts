@@ -7,9 +7,10 @@ import { CharacterListComponent } from "./character-list/character-list.componen
 import { CharacterComponent } from './character/character.component';
 import { CharacterDetailsComponent } from './character-details/character-details.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MainScreenComponent } from './main-screen/main-screen.component';
 
 @NgModule({
-  declarations: [AppComponent, CharacterListComponent, CharacterComponent, CharacterDetailsComponent],
+  declarations: [AppComponent, CharacterListComponent, CharacterComponent, CharacterDetailsComponent, MainScreenComponent],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
